@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+        
+        .loader img {
+            width: 80px;
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Estilos adicionales para el contenido de la página */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            margin: 10px;
+        }
+        
+        .k {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .k a {
+            margin: 10px;
+        }
+        
+        button {
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+        
+        @media screen and (max-width: 480px) {
+            header {
+                flex-direction: column;
+            }
+            
+            .k {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="loader">
+        <img src="logo.png" alt="Cargando...">
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var loader = document.querySelector('.loader');
+            loader.style.display = 'none';
+        });
+    </script>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="AGINSE" style="width: 80px;">
+        </div>
+    
+        <div class="k">
+            <a href="#AGINSE" id="nosotros" style="text-decoration:none; color:rgb(15, 14, 14);">
+                <button>SACOSTA</button>
+            </a>
+            <a href="#seguros" id="servicios" style="text-decoration:none; color:rgb(15, 14, 14);">
+                <button>INTERESADOS EN OBRAS</button>
+            </a>
+            <a href="#cara" id="contactanos" style="text-decoration:none; color:rgb(15, 14, 14);">
+                <button>CONTACTANOS</button>
+            </a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="hero">
+            <h2>Constructora<span class="color-acento">  Sacosta</span></h2>
+        </section>
+        
+        <section id="AGINSE">
+            <div class="img-container"></div>
+           
+            <h2><span class="color-acento">SACOSTA</span></h2>
+            <p></p>
+            <p></p>
+            
+            <p class="reglas"><span class="color-acento"></span> Es una empresa constructora 100% mexicana, fundada en el
+                año 2008, dedicada a la industria de la construcción, cumpliendo con todos los estándares necesarios para la correcta construcción del proyecto, contando con propuestas innovadoras y proyectos de construcción de obra civil, siempre a la vanguardia.
+                Compromiso, Responsabilidad y Honestidad, así como pasión por la construcción y la satisfacción del cliente es lo que nos distingue, en SACOSTA nos comprometemos a que su proyecto concluya en el mejor tiempo y por consecuente en el mejor costo posible sin sacrificar la calidad.
+                Contamos con profesionistas y personal de amplia experiencia en el ramo. Nuestro valor agregado es la mejor atención personalizada, el mejor presupuesto y tiempo con un buen control de obra.
+
+                
+                </p>
+                <p class="reglas"><span class="color-acento">Nuestra Misión:</span>Ser la mejor opción para nuestros clientes en Construcción civil, Obra pesada, Edificación, Comercial, Industrial e institucional, con los mejores tiempos y costos del mercado, comprometidos con la calidad e inmersos en un proceso de mejora continua.</p>
+            <p class="reglas"><span class="color-acento">Nuestros Valores:</span> El compromiso y la Responsabilidad para con el cliente y el proyecto son valores clave en SACOSTA. Es de suma importancia para nosotros una atención adecuada que garantice un buen resultado.
+                Buen ambiente Laboral implementada por políticas de respeto y tolerancia, en el trabajo en equipo en SACOSTA es nuestro mayor Activo, ya que es el motor que mueve nuestra empresa.</p>
+
+        </section>
+        
+        <section id="seguros">
+            <div class="programas">
+                <div class="carta">
+                    <h3 style="color:white;">INTERES EN OBRAS </h3>
+                    <a id="solicitar-seguro" href="pagina2.html" style="text-decoration:none; color:rgb(15, 14, 14);">
+                        <button style="border-radius: 10px;">Ver servicio</button>
+                    </a>
+                </div>
+                <div class="carta">
+                    <h3 style="color:white;">PERSONAL TECNICO</h3>
+                    <a id="solicitar-seguro" href="pagina3.html" style="text-decoration:none; color:white;">
+                        <button style="border-radius: 10px;">Ver servicio</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cara">
+            <h2>Contáctanos <span class="color-acento">por aquí</span></h2>
+            <div>
+                <div style="text-align: center;">
+                    <img src="wha.png" alt="AGINSE" style="width: 100px;">
+                    <br>
+                   
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://api.whatsapp.com/send?phone=522281247105" target="_blank">
+                        <button>Contactar por WhatsApp</button>
+                    </a>
+                </div>
+                <br>
+              
+
+                <div style="text-align: center;">
+                    <img src="telefono.png" alt="AGINSE" style="width: 100px;">
+                    <br>
+                    <a href="tel:+522281247105">
+                        <button>Llámanos</button>
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <div style="text-align: center;">
+                        <img src="insta.png" alt="AGINSE" style="width: 100px;">
+                        <br>
+                        <br>
+
+
+
+                    <a href="https://www.instagram.com/industrialfot/" target="_blank">
+                        <button>Contactanos por instagram</button>
+                    </a>
+            </div>
+        </section>
+    </div>
+    
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+</body>
+</html>
